@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторная 4</title>
+    <link rel="stylesheet" href="/styles/table.css">
+</head>
+<body>
+    <div class="header">
+        <a href="/pages/lb3.html">Основная страница</a>
+        <a href="/pages/page2.html">Позиционирование элементов</a>
+        <a href="#">Таблица</a>
+    </div>
+
+    <table>
+        <caption>Список студентов группы</caption>
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Username</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Larry</td>
+                <td>the Bird</td>
+                <td>@twitter</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Jake</td>
+                <td>Propper</td>
+                <td>@vso</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Larry</td>
+                <td>the Bird</td>
+                <td>@twitter</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>Jake</td>
+                <td>Propper</td>
+                <td>@vso</td>
+            </tr>
+        </tbody>
+    </table>
+
+<h2>Добавить нового студента</h2>
+
+<form id="addStudentForm">
+    <div class="form-row">
+        <div class="form-group">
+            <label for="studentId">№</label><br>
+            <input type="number" id="studentId" name="studentId" placeholder="Номер" required>
+        </div>
+
+        <div class="form-group">
+            <label for="firstName">First Name</label><br>
+            <input type="text" id="firstName" name="firstName" placeholder="Имя" required>
+        </div>
+
+        <div class="form-group">
+            <label for="lastName">Last Name</label><br>
+            <input type="text" id="lastName" name="lastName" placeholder="Фамилия" required>
+        </div>
+
+        <div class="form-group">
+            <label for="username">Username</label><br>
+            <input type="text" id="username" name="username" placeholder="@логин" required>
+        </div>
+    </div>
+
+    <div class="form-submit">
+        <button type="submit">Добавить</button>
+    </div>
+</form>
+</body>
+</html>

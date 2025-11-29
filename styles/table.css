@@ -1,0 +1,146 @@
+body{
+    background-color: #eef9f5;
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+*{
+    font-size: 3vh;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #3c9e8e;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.header a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+.header a:hover {
+    background-color: #245e54;
+}
+
+table {
+    width: 90%;
+    max-width: 800px;
+    margin: 30px auto;
+    border-collapse: collapse;
+    font-size: 2vh;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+caption {
+    font-size: 2.5vh;
+    font-weight: bold;
+    padding: 15px;
+    background-color: #f0f0f0;
+    color: #333;
+    text-align: left;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #f0f0f0;
+    font-weight: bold;
+    color: #333;
+}
+
+tbody tr:nth-child(4n+1) {
+    background-color: #e8ffe8;
+}
+tbody tr:nth-child(4n+2) {
+    background-color: #ffe8e8;
+}
+tbody tr:nth-child(4n+3) {
+    background-color: #f0e8ff;
+}
+tbody tr:nth-child(4n+4) {
+    background-color: #e8ffe8;
+}
+
+/* Форма для добавления */
+h2 {
+    text-align: center;
+    margin: 40px 0 20px;
+    font-size: 2.4vh;
+}
+
+#addStudentForm {
+    max-width: 800px;
+    margin: 0 auto 50px;
+}
+
+.form-row {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.form-group {
+    flex: 1;
+    min-width: 150px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.8vh;
+    border: 1px solid #b0d5cd;
+    border-radius: 6px;
+    box-sizing: border-box;
+    background-color: #f8fdfc;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #3c9e8e;
+    box-shadow: 0 0 0 2px rgba(60, 158, 142, 0.3);
+}
+
+.form-submit {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.form-submit button {
+    background-color: #3c9e8e;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 2vh;
+    font-weight: bold;
+    transition: background-color 0.2s ease;
+}
+
+.form-submit button:hover {
+    background-color: #245e54;
+}

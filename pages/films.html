@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фильмы Леонардо ДиКаприо</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/style-lb6.css">
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-nav">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="d-flex align-items-center gap-3">
+                <a class="navbar-brand text-turquoise mb-0" href="info.html">ДиКаприо</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <div class="alert alert-turquoise d-flex align-items-center justify-content-between border border-turquoise" role="alert">
+            <span><strong>Внимание!</strong> Эта страница находится в разработке. Полный список будет добавлен позже.</span>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="alert" aria-label="Закрыть"></button>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <h2 class="text-turquoise">Фильмография (частично)</h2>
+        <div class="list-group bg-card">
+            <a href="#" class="list-group-item list-group-item-action bg-card text-white border-turquoise">Титаник (1997)</a>
+            <a href="#" class="list-group-item list-group-item-action bg-card text-white border-turquoise">Начало (2010)</a>
+            <a href="#" class="list-group-item list-group-item-action bg-card text-white border-turquoise">Выживший (2015)</a>
+            <a href="#" class="list-group-item list-group-item-action bg-card text-white border-turquoise">Волк с Уолл-стрит (2013)</a>
+            <a href="#" class="list-group-item list-group-item-action bg-card text-white border-turquoise">Отступники (2006)</a>
+            <a href="#" class="list-group-item list-group-item-action bg-card text-white border-turquoise">Джанго освобождённый (2012)</a>
+            <a href="#" class="list-group-item list-group-item-action bg-card text-white border-turquoise">Великий Гэтсби (2013)</a>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const sidebar = document.getElementById('sidebar');
+        const burgerBtn = document.getElementById('burgerBtn');
+        const bsSidebar = new bootstrap.Offcanvas(sidebar);
+        burgerBtn.addEventListener('click', () => {
+            bsSidebar.show();
+        });
+    </script>
+</body>
+</html>

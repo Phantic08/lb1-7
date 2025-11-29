@@ -1,0 +1,130 @@
+:root {
+    --dark-bg: #0f1215;
+    --turquoise: #4ECDC4;
+    --white: #ffffff;
+    --card-bg: #14181c;
+}
+
+body {
+    background-color: var(--dark-bg);
+    color: var(--white);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.bg-nav {
+    background-color: var(--dark-bg) !important;
+}
+
+.bg-card {
+    background-color: var(--card-bg) !important;
+}
+
+.text-turquoise {
+    color: var(--turquoise) !important;
+}
+
+.btn-turquoise {
+    background-color: var(--turquoise);
+    color: var(--dark-bg) !important;
+    border: none;
+    box-shadow: 0 2px 5px rgba(78, 205, 196, 0.2);
+}
+
+.btn-turquoise:hover {
+    background-color: #3ebaa4;
+    box-shadow: 0 4px 8px rgba(78, 205, 196, 0.3);
+}
+
+.btn-outline-turquoise {
+    color: var(--turquoise);
+    border-color: var(--turquoise);
+    box-shadow: 0 0 0 1px rgba(78, 205, 196, 0.3);
+}
+
+.btn-outline-turquoise:hover {
+    background-color: var(--turquoise);
+    color: var(--dark-bg) !important;
+    box-shadow: 0 0 0 1px rgba(78, 205, 196, 0.5);
+}
+
+.no-outline {
+    background: none;
+    border: none;
+    padding: 0.375rem 0.75rem;
+    border-radius: 0.375rem;
+    transition: background-color 0.2s;
+}
+
+.no-outline:hover {
+    background-color: rgba(78, 205, 196, 0.15);
+}
+
+.border-turquoise {
+    border-color: var(--turquoise) !important;
+}
+
+.alert-turquoise {
+    background-color: #1a2e33;
+    color: var(--white);
+    border: 1px solid var(--turquoise);
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.carousel-item img {
+    height: 600px;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    display: block;
+}
+
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 0.5rem;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(78, 205, 196, 0.15);
+}
+
+.list-group-item {
+    border: 1px solid var(--turquoise);
+    border-radius: 0.5rem;
+    margin-bottom: 0.5rem;
+    background-color: var(--card-bg);
+    color: var(--white);
+}
+
+.list-group-item:hover {
+    background-color: #1a1f24;
+    border-color: #5fd2d7;
+}
+
+.offcanvas {
+    width: 240px !important;
+    background-color: var(--card-bg);
+}
+
+.offcanvas-header {
+    padding: 1rem 1.25rem;
+}
+
+.list-group-item-action.bg-card {
+    padding: 1rem 1.25rem;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.list-group-item-action.bg-card:hover {
+    background-color: #1a1f24;
+    color: var(--turquoise) !important;
+}
+
+@media (max-width: 768px) {
+    .carousel-item img {
+        height: 250px;
+    }
+}
